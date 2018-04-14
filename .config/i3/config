@@ -34,7 +34,7 @@ bindsym $mod+grave exec urxvtc
 bindsym $mod+x kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -i -y 18
+bindsym $mod+d exec dmenu_run -fn 'Sans-8' -i -y 18
 
 # programs
 bindsym $mod+F2 exec palemoon
@@ -48,6 +48,7 @@ bindsym $alt+d exec deluge
 bindsym $alt+c exec calibre
 bindsym $alt+8 exec ~/Scripts/wall.sh
 bindsym $alt+y exec mpv $(xsel -b)
+bindsym $alt+b exec surf duckduckgo.com
 
 # change focus
 bindsym $mod+h focus left
@@ -158,6 +159,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3blocks
+        font sans 8
         i3bar_command i3bar
         position top
 }
